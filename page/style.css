@@ -1,0 +1,183 @@
+ 	* {
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+
+	.overflow-hidden {
+		overflow: hidden;
+	}
+
+	.overflow-active {
+		overflow-y: scroll;
+	}
+
+ 	aside.aside-menu {
+ 		display: flex;
+ 		flex-direction: column;
+ 		position: fixed;
+ 		top: 0;
+ 		bottom: 0;
+ 		left: 0;
+ 		z-index: 1;
+
+ 		padding: 20px;
+ 		background-color: rgb(63, 63, 63);
+ 		font-family: Arial, Helvetica, sans-serif;
+ 		color: rgb(192, 192, 192);
+ 		gap: 40px;
+ 	}
+
+ 	.aside-close .side-menu__label {
+ 		display: none;
+ 	}
+
+ 	.botao_aside {
+ 		all: unset;
+ 		gap: 25px;
+ 		display: flex;
+ 	}
+
+ 	.mb-auto {
+ 		margin-bottom: auto;
+ 	}
+
+ 	.mr-2 {
+ 		margin-right: 20px;
+ 	}
+
+ 	main {
+ 		width: 80%;
+ 		margin-left: 90px;
+ 		font-family: Arial, Helvetica, sans-serif;
+ 	}
+
+ 	main .galeria h1 {
+ 		text-align: center;
+ 		margin: 40px 0px;
+ 	}
+
+ 	main .galeria figure .container_image figcaption {
+ 		margin-bottom: 30px;
+ 	}
+
+ 	/*-------------------*/
+ 	.modal {
+ 		background-color: rgb(0, 0, 0, 0.6);
+ 		position: fixed;
+
+ 		top: 0;
+ 		right: 0;
+ 		bottom: 0;
+ 		left: 0;
+
+ 		z-index: 2;
+ 	}
+
+ 	figure .container_image {
+ 		display: flex;
+ 		flex-direction: column;
+ 		position: relative;
+ 		margin-left: 20px;
+ 	}
+
+ 	.modal__button {
+ 		all: unset;
+ 		box-sizing: border-box;
+ 		cursor: pointer;
+ 	}
+
+ 	.modal__button--close {
+ 		position: absolute;
+
+ 		top: 90px;
+ 		right: 45px;
+ 	}
+
+ 	.modal__container {
+ 		position: relative;
+ 	}
+
+ 	.modal__image {
+ 		width: 500px;
+ 		height: auto;
+ 	}
+
+ 	.modal__like {
+ 		position: absolute;
+ 		top: 18px;
+ 		right: 18px;
+ 	}
+
+ 	.modal__button--previous {
+ 		position: absolute;
+ 		left: -100px;
+ 	}
+
+ 	.modal__button--next {
+ 		position: absolute;
+ 		right: -100px;
+ 	}
+
+ 	/*---------Like--------*/
+	 .modal-favoritos {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.829);
+	 }
+
+	 .favoritos {
+		height: 85vh;
+		position: relative;
+		background-color: rgb(205, 168, 219);
+		position: fixed;
+		top: 40px;
+		left: 100px;
+		right: 40px;
+		padding: 10px 10px 10px 100px;
+		font-family: Arial, Helvetica, sans-serif;
+		border-radius: 10px;
+	}
+	
+
+ 	figure img.item__like {
+ 		position: absolute;
+ 		right: 15px;
+ 		top: 20px;
+ 		cursor: pointer;
+ 	}
+
+ 	.favoritos figure .like-ativo {
+ 		position: relative;
+ 		left: 241px;
+ 		height: 39px;
+ 		bottom: 202px;
+ 		display: flex;
+ 	}
+
+
+ 	.favoritos h1 {
+ 		text-align: center;
+ 		margin: 40px 0px;
+ 		font-size: 30px;
+ 	}
+
+ 	.foto_favoritos {
+ 		margin-right: 40px;
+ 	}
+
+ 	.alerta {
+ 		position: relative;
+ 		margin: auto
+ 	}
+	 
+	img.icon-close_modal-favoritos {
+		position: fixed;
+		cursor: pointer;
+		top: 70px;
+		right: 100px;
+		width: 30px;
+		height: 30px;
+	}

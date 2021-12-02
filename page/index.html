@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática evento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <aside class="aside-menu flex-column menuPrincipal aside-close">
+        <button class="botao_aside">
+            <img class="menu-icon" src="./assets/closed-menu.svg" alt="icon-menu">
+        </button>
+
+        <button class="botao_aside">
+            <img class="home" src="./assets/active-home.svg" alt="icon-home">
+            <span class="side-menu__label">Início</span>
+        </button>
+
+        <button class="botao_aside mb-auto">
+            <img class="galeria-fav" src="./assets/inactive-like.svg" alt="icon-like">
+            <span class="side-menu__label">Favoritos</span>
+        </button>
+
+        <button class="botao_aside button_config">
+            <img src="./assets/inactive-settings.svg" alt="icon-setting">
+            <span class="side-menu__label">Configurações</span>
+        </button>
+    </aside>
+
+    <main class="principal">
+        <section class="galeria">
+            <h1>Inicio</h1>
+            <div class="container_imagens">
+                <figure class="flex-row flex-wrap">
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 1.png" alt="imagem-1" title="Foto">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 2.png" alt="imagem-2">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 3.png" alt="imagem-3">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 4.png" alt="imagem-4">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 5.png" alt="imagem-5">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 6.png" alt="imagem-6">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 7.png" alt="imagem-7">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 8.png" alt="imagem-8">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 9.png" alt="imagem-9">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                    <div class="container_image">
+                        <img class="item__like" src="./assets/inactive-like.svg">
+                        <img class="foto" src="./assets/gallery/image 10.png" alt="imagem-10">
+                        <figcaption>Lorem ipsum</figcaption>
+                    </div>
+
+                </figure>
+            </div>
+        </section>
+
+        <section class="modal hidden flex-row justify-center align-center">
+
+            <button class="modal__button modal__button--close">
+                <img src="./assets/close-modal.svg" alt="Fechar modal">
+            </button>
+
+            <div class="modal__container flex-row align-center">
+                <img class="modal__button modal__button--previous" src="./assets/prev.svg" alt="Anterior">
+                <img class="modal__like" src="./assets/inactive-like.svg" alt="Like">
+                <img class="modal__image">
+                <img class="modal__button modal__button--next" src="./assets/next.svg" alt="Próximo">
+            </div>
+        </section>
+
+        <section class="modal-favoritos hidden">
+            <div class="favoritos flex-column">
+                
+                <img src="./assets/close-modal.svg" class="icon-close_modal-favoritos" alt="imagem-1">
+
+            <h1>Fotos favoritas</h1>
+            <figure class="flex-row flex-wrap">
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 1.png" alt="imagem-1">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 2.png" alt="imagem-2">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 3.png" alt="imagem-3">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 4.png" alt="imagem-4">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 5.png" alt="imagem-5">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 6.png" alt="imagem-6">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 7.png" alt="imagem-7">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 8.png" alt="imagem-8">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 9.png" alt="imagem-9">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+
+                <div class="foto_favoritos hidden">
+                    <img class="imagem_favoritos" src="./assets/gallery/image 10.png" alt="imagem-10">
+                    <figcaption>Lorem ipsum</figcaption>
+                    <img class="like like-ativo" src="./assets/like.svg">
+                </div>
+            </figure>
+            <div class="alerta hidden">Não possui imagens favoritas</div>
+        </div>
+        </section>
+    </main>
+</body>
+
+</html>
